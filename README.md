@@ -1,6 +1,6 @@
 # Blobfy
 
-blobfy is a simple npm package that provides an easy way to work with binary data using JavaScript's Blob object. This package allows you to convert data from various sources into Blob objects, which can be particularly useful for handling files, streams, and other types of binary data.
+blobfy is a simple npm package that provides an easy way to work with binary data using JavaScript's Blob object. This package lets you convert data from various sources into Blob objects, which can be particularly useful for dealing with files, streams, and other types of binary data. It is perfect to use in React/React Native projects (expo compatible)
 
 ## Installation
 
@@ -17,7 +17,7 @@ Using blobfy is straightforward. Once you've installed the package, you can impo
 1. Import the blobfy module:
 
 ```javascript
-import Blobfy from 'blobfy';
+import { Blobify } from "blobfy";
 ```
 
 2. Convert data to a Blob:
@@ -49,7 +49,7 @@ Closes the Blob, releasing its resources. This method should be called when you'
 Here's an example of using blobfy to convert an image URL into a Blob and display it on a web page:
 
 ```javascript
-import Blobfy from 'blobfy';
+import { Blobify } from "blobfy";
 
 const displayImage = async (imageUrl) => {
   const blob = await Blobfy(imageUrl);
