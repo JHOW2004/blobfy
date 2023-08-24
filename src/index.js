@@ -16,8 +16,6 @@ async function Blobify (uri) {
         
     });
 
-    blob.close();
-
     return blob;
 }
 
