@@ -7,7 +7,7 @@ blobfy is a simple npm package that provides an easy way to work with binary dat
 You can install Blobfy using npm:
 
 ```bash
-npm install blobfy
+npm install blobfy@3.1.3
 ```
 
 ## Usage
