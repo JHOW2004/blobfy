@@ -1,23 +1,23 @@
-# Blobify
+# Blobfy
 
-Blobify is a simple npm package that provides an easy way to work with binary data using JavaScript's Blob object. This package allows you to convert data from various sources into Blob objects, which can be particularly useful for handling files, streams, and other types of binary data.
+blobfy is a simple npm package that provides an easy way to work with binary data using JavaScript's Blob object. This package allows you to convert data from various sources into Blob objects, which can be particularly useful for handling files, streams, and other types of binary data.
 
 ## Installation
 
-You can install Blobify using npm:
+You can install Blobfy using npm:
 
 ```bash
-npm install blobify
+npm install Blobfy
 ```
 
 ## Usage
 
-Using Blobify is straightforward. Once you've installed the package, you can import and use it in your code like this:
+Using blobfy is straightforward. Once you've installed the package, you can import and use it in your code like this:
 
-1. Import the Blobify module:
+1. Import the blobfy module:
 
 ```javascript
-import Blobify from 'blobify';
+import Blobfy from 'blobfy';
 ```
 
 2. Convert data to a Blob:
@@ -25,7 +25,7 @@ import Blobify from 'blobify';
 ```javascript
 const yourFunction = async () => {
   // Replace 'your_uri' with the actual URI or data you want to convert
-  const blob = await Blobify('your_uri');
+  const blob = await blobfy('your_uri');
 
   // Don't forget to release the resources when you're done
   blob.close();
@@ -34,9 +34,9 @@ const yourFunction = async () => {
 
 ## API Reference
 
-### Blobify(uri: string): Promise&lt;Blob&gt;
+### blobfy(uri: string): Promise&lt;Blob&gt;
 
-The main function provided by the Blobify package. It takes a URI or data as input and returns a Promise that resolves to a Blob object containing the converted data.
+The main function provided by the blobfy package. It takes a URI or data as input and returns a Promise that resolves to a Blob object containing the converted data.
 
 - `uri` (string): The URI or data that you want to convert into a Blob.
 
@@ -46,13 +46,13 @@ Closes the Blob, releasing its resources. This method should be called when you'
 
 ## Example
 
-Here's an example of using Blobify to convert an image URL into a Blob and display it on a web page:
+Here's an example of using blobfy to convert an image URL into a Blob and display it on a web page:
 
 ```javascript
-import Blobify from 'blobify';
+import blobfy from 'blobfy';
 
 const displayImage = async (imageUrl) => {
-  const blob = await Blobify(imageUrl);
+  const blob = await blobfy(imageUrl);
 
   const blobUrl = URL.createObjectURL(blob);
   const imgElement = document.createElement('img');
@@ -68,7 +68,7 @@ displayImage(imageUrl);
 
 ## Conclusion
 
-Blobify simplifies the process of working with binary data in JavaScript by providing an intuitive way to convert data into Blob objects. With its easy-to-use interface, you can seamlessly handle files, streams, and other binary data sources. Remember to close the Blob objects when you're done using them to free up resources.
+blobfy simplifies the process of working with binary data in JavaScript by providing an intuitive way to convert data into Blob objects. With its easy-to-use interface, you can seamlessly handle files, streams, and other binary data sources. Remember to close the Blob objects when you're done using them to free up resources.
 
 If you encounter any issues or have suggestions for improvement, feel free to [report them on GitHub](https://github.com/JHOW2004/blobfy.git).
 
