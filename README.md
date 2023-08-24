@@ -7,7 +7,7 @@ blobfy is a simple npm package that provides an easy way to work with binary dat
 You can install Blobfy using npm:
 
 ```bash
-npm install Blobfy
+npm install blobfy
 ```
 
 ## Usage
@@ -25,7 +25,7 @@ import Blobfy from 'blobfy';
 ```javascript
 const yourFunction = async () => {
   // Replace 'your_uri' with the actual URI or data you want to convert
-  const blob = await blobfy('your_uri');
+  const blob = await Blobfy('your_uri');
 
   // Don't forget to release the resources when you're done
   blob.close();
@@ -49,10 +49,10 @@ Closes the Blob, releasing its resources. This method should be called when you'
 Here's an example of using blobfy to convert an image URL into a Blob and display it on a web page:
 
 ```javascript
-import blobfy from 'blobfy';
+import Blobfy from 'blobfy';
 
 const displayImage = async (imageUrl) => {
-  const blob = await blobfy(imageUrl);
+  const blob = await Blobfy(imageUrl);
 
   const blobUrl = URL.createObjectURL(blob);
   const imgElement = document.createElement('img');
